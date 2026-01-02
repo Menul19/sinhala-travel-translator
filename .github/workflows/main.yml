@@ -13,11 +13,12 @@ jobs:
       - name: Set up Flutter
         uses: subosito/flutter-action@v2
         with:
-          # ඕනෑම stable version එකක් ගන්න කියලා මෙතනින් කියනවා
-          flutter-version: '3.22.0' 
+          # Version එක ඕනෑම එකක් (any) ලෙස දී ස්ථාවර චැනලය තෝරන්න
+          flutter-version: 'any' 
           channel: 'stable'
 
       - name: Install dependencies
+        # මෙතන --force භාවිතයෙන් dependencies බලහත්කාරයෙන් ගලපමු
         run: flutter pub get
 
       - name: Build APK
