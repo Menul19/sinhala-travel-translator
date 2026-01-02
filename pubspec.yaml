@@ -1,31 +1,6 @@
-name: travel_translator
-description: AI-powered real-time Sinhala translator for travelers.
-version: 1.0.0+1
-
-environment:
-  sdk: '>=3.0.0 <4.0.0'
-
 dependencies:
   flutter:
     sdk: flutter
-
-  # ඇප් එකට අවශ්‍ය Packages
-  cupertino_icons: ^1.0.6
-  camera: ^0.11.0                  # කැමරාව සඳහා
-  google_mlkit_text_recognition: ^0.11.0 # පින්තූරවල අකුරු කියවීමට (OCR)
-  speech_to_text: ^6.6.0           # සිංහල හඬ හඳුනා ගැනීමට
-  translator: ^0.1.7               # භාෂා පරිවර්තනයට
-  google_fonts: ^6.1.0             # ලස්සන සිංහල Font සඳහා
-  permission_handler: ^11.0.0      # Camera/Mic Permissions සඳහා
-
-dev_dependencies:
-  flutter_test:
-    sdk: flutter
-  flutter_lints: ^3.0.0
-
-flutter:
-  uses-material-design: true
-  
-  # ඇප් එකට පින්තූර දානවා නම් මේ කොටස අවශ්‍යයි
-  assets:
-    - assets/images/
+  # පහත පේළි දෙක මේ ආකාරයට වෙනස් කරන්න
+  translator: ^1.0.4+1
+  google_fonts: ^4.0.4
