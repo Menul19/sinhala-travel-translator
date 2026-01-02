@@ -13,10 +13,9 @@ jobs:
       - name: Set up Flutter
         uses: subosito/flutter-action@v2
         with:
-          # pubspec එකේ ඇති version එකට වඩා වැඩි එකක් මෙහි තිබිය යුතුය
-          flutter-version: '3.22.0'
+          # ඕනෑම stable version එකක් ගන්න කියලා මෙතනින් කියනවා
+          flutter-version: '3.22.0' 
           channel: 'stable'
-          cache: true
 
       - name: Install dependencies
         run: flutter pub get
