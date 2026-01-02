@@ -1,9 +1,8 @@
 environment:
-  # මේ පේළිය මෙහෙමම දාන්න, එතකොට ප්‍රශ්නය විසඳෙනවා
-  sdk: '>=3.0.0 <4.0.0'
+  sdk: '>=3.0.0 <4.0.0' # මේ පේළිය මෙසේ වෙනස් කරන්න
 
 dependencies:
   flutter:
     sdk: flutter
   translator: ^1.0.4+1
-  google_fonts: ^6.1.0
+  google_fonts: ^6.1.0 # පින්තූරයේ තිබූ conflict එක අනුව මෙය 6.1.0 ලෙස තබන්න
