@@ -1,27 +1,8 @@
-name: travel_translator
-description: "A new Flutter project."
-publish_to: 'none'
-
-version: 1.0.0+1
-
 environment:
-  sdk: '>=3.19.0 <4.0.0'
+  sdk: '>=3.0.0 <4.0.0' # මෙය භාවිතා කර බලන්න
 
 dependencies:
   flutter:
     sdk: flutter
-  
-  # මෙන්න මේ පේළි දෙක මම නිවැරදි කරලා තියෙන්නේ:
   translator: ^1.0.4+1
-  google_fonts: ^4.0.4
-  
-  cupertino_icons: ^1.0.6
-  # ඔබට වෙනත් packages තිබේ නම් ඒවා මීට යටින් ඇතුළත් කරන්න
-
-dev_dependencies:
-  flutter_test:
-    sdk: flutter
-  flutter_lints: ^3.0.0
-
-flutter:
-  uses-material-design: true
+  google_fonts: ^6.1.0 # පින්තූරයේ තිබූ conflict එක අනුව අලුත්ම එක දාන්න
