@@ -13,12 +13,12 @@ jobs:
       - name: Set up Flutter
         uses: subosito/flutter-action@v2
         with:
-          # මෙතනට අලුත්ම stable version එක ලබා දීමෙන් SDK ගැටලු මගහැරේ
-          flutter-version: '3.22.2' 
+          # pubspec එකේ ඇති version එකට වඩා වැඩි එකක් මෙහි තිබිය යුතුය
+          flutter-version: '3.22.0'
           channel: 'stable'
+          cache: true
 
       - name: Install dependencies
-        # Pubspec එකේ ගැටලු තිබේ නම් ඒවා මගහැරීමට 'pub get' භාවිතා කරයි
         run: flutter pub get
 
       - name: Build APK
