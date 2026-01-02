@@ -1,26 +1,9 @@
-name: travel_translator
-description: "A new Flutter project."
-publish_to: 'none'
-
-version: 1.0.0+1
-
 environment:
-  # මෙතන SDK version එක මෙසේ තිබීම අත්‍යවශ්‍යයි
-  sdk: '>=3.19.0 <4.0.0'
+  # මේ පේළිය මෙහෙමම දාන්න, එතකොට ප්‍රශ්නය විසඳෙනවා
+  sdk: '>=3.0.0 <4.0.0'
 
 dependencies:
   flutter:
     sdk: flutter
-  
-  # Error එක මඟහැරවීමට මම මේවා නිවැරදි කර ඇත
   translator: ^1.0.4+1
-  google_fonts: ^6.1.0 
-  cupertino_icons: ^1.0.6
-
-dev_dependencies:
-  flutter_test:
-    sdk: flutter
-  flutter_lints: ^3.0.0
-
-flutter:
-  uses-material-design: true
+  google_fonts: ^6.1.0
