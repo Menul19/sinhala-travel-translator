@@ -8,21 +8,24 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4 # v4 වලට අප්ඩේට් කර ඇත
+      - uses: actions/checkout@v4
 
       - name: Set up Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.19.0'
+          # මෙතනට අලුත්ම stable version එක ලබා දීමෙන් SDK ගැටලු මගහැරේ
+          flutter-version: '3.22.2' 
+          channel: 'stable'
 
       - name: Install dependencies
+        # Pubspec එකේ ගැටලු තිබේ නම් ඒවා මගහැරීමට 'pub get' භාවිතා කරයි
         run: flutter pub get
 
       - name: Build APK
         run: flutter build apk --release
 
       - name: Upload APK Result
-        uses: actions/upload-artifact@v4 # මෙතන v4 ලෙස වෙනස් කර ඇත
+        uses: actions/upload-artifact@v4
         with:
           name: app-release
           path: build/app/outputs/flutter-apk/app-release.apk
